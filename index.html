@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Tic Tac Toe</title>
-  
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+
+	<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-
+	<div class="container"></div>
 	<table>
 		<tr>
 			<td class="cell" id="0"></td>
@@ -30,14 +31,15 @@
 	</table>
 	<div class="endgame">
 		<div class="text"></div>
+		<button class="replay" onClick="startGame()">Replay</button>
 	</div>
-    <div class = "selectSym">
-    <p>Select symbol:</p>
-      <button onClick="selectSym('X')">X</button>
-      <button onClick="selectSym('O')">O</button>
-    </div>
-	<button onClick="startGame()">Replay</button>
+	<div class="selectSym">
+		<p>Select symbol:</p>
+		<button onClick="selectSym('X')">X</button>
+		<button onClick="selectSym('O')">O</button>
+	</div>
 
-  <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
+
 </html>
